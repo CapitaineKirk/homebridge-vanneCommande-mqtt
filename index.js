@@ -103,7 +103,7 @@ function ValveCmdAccessoryMqtt(log, config) {
 
   tableauValve[this.indice] = this;
 
-  this.client_Id = 'mqttCommande' + config.module;
+  this.client_Id = 'mqttCommande' + config.module + '-' + config.port;
   this.options = {
     keepalive: 10,
     clientId: this.client_Id,
