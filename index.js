@@ -252,7 +252,7 @@ ValveCmdAccessoryMqtt.prototype.getStatusFault = function(callback) {
   var accessory = this;
 
   accessory.log('Appel de getStatusFault');
-  callback(null, accessory.etatEnDefaut);
+  callback(null, accessory.etatValveEnDefaut);
 }
 
 ValveCmdAccessoryMqtt.prototype.mqttGererErreur = function() {
